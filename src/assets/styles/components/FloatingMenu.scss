@@ -11,7 +11,7 @@
     flex-direction: column;
     width: 9rem;
     height: 9rem;
-    padding: calc(var(--space) + .5rem);
+    padding: calc(var(--space) + .5rem) var(--space);
     border-radius: 0 calc(var(--border-radius) + .7rem) calc(var(--border-radius) + .7rem) var(--border-radius);
   }
 
@@ -55,10 +55,11 @@
   }
 
   &__image {
-    width: 3rem;
+    width: 3.5rem;
   }
 
   &__weather {
+    text-align: center;
     color: var(--white-color);
   }
 

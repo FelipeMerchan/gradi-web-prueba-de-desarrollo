@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import '../assets/styles/components/ForecastDay.scss'
 import cloud from '../assets/static/nublado.svg'
@@ -16,7 +16,7 @@ export const ForecastDay = ({ isToday }) => {
         </div>
       </div>
       <div className={`ForecastDay__temperature ${isToday ? 'today' : ''}`}>
-        <span>32 / 23</span>
+        <span>32° / 23°</span>
       </div>
     </article>
   )
