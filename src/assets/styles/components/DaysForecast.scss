@@ -1,0 +1,36 @@
+.DaysForecast {
+
+  &__days {
+    display: grid;
+    grid-gap: var(--space);
+  }
+
+  &__title {
+    margin-block-end: var(--space-4);
+    font-size: 2.6rem;
+    line-height: 2rem;
+    font-weight: var(--light);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .DaysForecast {
+
+    &__days {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .DaysForecast {
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__days {
+      grid-template-columns: 1fr;
+    }
+  }
+}

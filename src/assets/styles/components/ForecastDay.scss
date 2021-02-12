@@ -1,0 +1,46 @@
+.ForecastDay {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: var(--space);
+  border: 1px solid var(--gray-color);
+  border-radius: var(--border-radius);
+
+  & > div:first-child {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-column-gap: var(--space);
+    align-items: center;
+    padding: var(--space-2) 0 var(--space-2) var(--space-2);
+  }
+
+  &__details {
+    span {
+      font-size: 1.6rem;
+
+      &:last-child {
+        color: var(--gray-color-dark);
+      }
+    }
+  }
+
+  &__temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    background-color: var(--gray-color-light);
+
+    &.today {
+      background-color: var(--primary-color-light);
+
+      span {
+        color: var(--white-color);
+      }
+    }
+
+    span {
+      font-size: 1.6rem;
+      font-weight: var(--bold);
+    }
+  }
+}

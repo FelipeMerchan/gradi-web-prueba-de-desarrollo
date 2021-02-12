@@ -1,0 +1,9 @@
+@mixin buttons {
+  background-color: #eeeefd;
+  padding: var(--space) var(--space-3);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+  border-radius: 3rem;
+  cursor: pointer;
+}

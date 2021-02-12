@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --black-color: #060509;
+  --white-color: #fff;
+  --gray-color: #ececec;
+  --gray-color-light: #dde8f4;
+  --gray-color-dark: #bababa;
+  --primary-color: #2f3584;
+  --primary-color-light: #7d68e9;
+  --surface-color: #fff;
+
+  /* Typography */
+  --font: 'Lato', system-ui;
+
+  /* Typo bolds */
+  --light: 300;
+  --normal: 400;
+  --bold: 700;
+
+  /* Spacing */
+  --space-half: .5rem;
+  --space: 1rem;
+  --space-2: 2rem;
+  --space-3: 3rem;
+  --space-4: 4rem;
+  --space-5: 5rem;
+
+  /* Border radius */
+  --border-radius: 2rem;
+}

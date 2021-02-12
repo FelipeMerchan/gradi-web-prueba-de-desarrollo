@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .wrapper {
+    padding: 0 var(--space-3);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0 var(--space-2);
+  }
+}

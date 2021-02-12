@@ -1,0 +1,152 @@
+.WeatherCard {
+  width: 90%;
+  margin-block-end: var(--space-2);
+  border-radius: var(--border-radius);
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 10px 73px 0px rgba(6,5,9,0.30);
+  -moz-box-shadow: 0px 10px 73px 0px rgba(6,5,9,0.30);
+  box-shadow: 0px 10px 73px 0px rgba(6,5,9,0.30);
+
+  & > div:first-child {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    grid-column-gap: var(--space-3);
+    align-items: center;
+  }
+
+  &__iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 9rem;
+    border-radius: var(--border-radius);
+    background-color: var(--gray-color-light);
+
+    & + div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+  }
+
+  &__temperature {
+    padding-inline-end: var(--space);
+    border-inline-end: 1px solid var(--gray-color-dark);
+    font-size: 3.6rem;
+    font-weight: var(--bold);
+
+    sup {
+      font-size: 1.6rem;
+      color: var(--gray-color-dark);
+    }
+  }
+
+  &__location {
+    padding-inline-start: var(--space);
+    font-size: 1.2rem;
+    font-weight: var(--bold);
+
+    span {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__footer {
+    padding: var(--space);
+    text-align: center;
+
+    span {
+      padding: 0 var(--space);
+      color: var(--gray-color-dark);
+      font-size: 1.2rem;
+
+      &:nth-of-type(2) {
+        border-inline-start: 1px solid var(--gray-color-dark);
+        border-inline-end: 1px solid var(--gray-color-dark);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .WeatherCard {
+    width: auto;
+
+    & > div:first-child {
+      grid-template-columns: 7rem 1fr;
+      grid-column-gap: 0;
+    }
+
+    &__iconContainer {
+      width: 7rem;
+      height: 7rem;
+
+      & + div {
+        justify-content: center;
+      }
+    }
+
+    &__icon {
+      width: 3rem;
+    }
+
+    &__temperature {
+      font-size: 2.6rem;font-size: 2.6rem;font-size: 2.6rem;font-size: 2.6rem;
+    }
+
+    &__location {
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-direction: column;
+
+      span {
+
+        &:nth-of-type(2){
+          padding: var(--space-half);
+          border: initial;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .WeatherCard {
+    width: 90%;
+    margin: 0 auto;
+    margin-block-end: var(--space-2);
+
+    & > div:first-child {
+      grid-template-columns: 5rem 1fr;
+      grid-column-gap: 0;
+    }
+
+    &__iconContainer {
+
+      & + div {
+        justify-content: center;
+      }
+    }
+
+    &__icon {
+      width: 2.5rem;
+    }
+
+    &__location {
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

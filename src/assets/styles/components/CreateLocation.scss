@@ -1,0 +1,37 @@
+@import '../../styles/Mixins.scss';
+
+.CreateLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 18.4rem;
+  border: .1rem dashed var(--gray-color-light);
+  border-radius: var(--border-radius);
+  background-color: var(--white-color);
+  padding-block-start: var(--space-2);
+  text-align: center;
+
+  &__button {
+    @include buttons;
+  }
+
+  &__image {
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .CreateLocation {
+    grid-column: 1/-1;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .CreateLocation {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

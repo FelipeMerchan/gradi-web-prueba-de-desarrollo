@@ -1,0 +1,36 @@
+.TopReviews {
+  display: flex;
+
+  span {
+    margin-block-start: .4rem;
+    margin-inline-end: var(--space);
+    font-size: 1.2rem;
+    color: var(--gray-color-dark);
+  }
+
+  &__users {
+    display: flex;
+
+    a {
+      margin-inline-end: .2rem;
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: calc(var(--border-radius) / 6);
+
+      &:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline-end: 0;
+        color: var(--white-color);
+        background-color: #b3a7f5;
+      }
+    }
+
+    img {
+      width: 2.5rem;
+      border-radius: calc(var(--border-radius) / 6);
+    }
+  }
+}

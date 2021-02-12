@@ -1,0 +1,72 @@
+.Banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 32rem;
+  border-radius: 3rem;
+  overflow: hidden;
+
+  &__information {
+    position: absolute;
+    left: calc(var(--space) * 8);
+  }
+
+  &__iconContainer {
+    display: flex;
+  }
+
+  &__icon {
+    width: 2.8rem;
+    margin-inline-end: var(--space);
+  }
+
+  &__city {
+    font-size: 3rem;
+    font-weight: var(--bold);
+    color: var(--primary-color-light);
+  }
+
+  &__mapContainer {
+    width: 11rem;
+    margin-block-start: var(--space-3);
+    margin-inline-start: var(--space-3);
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__image {
+    height: 32rem;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Banner {
+    align-items: flex-start;
+
+    &__information {
+      top: var(--space-4);
+      left: calc(var(--space) * 6);
+    }
+
+    &__icon {
+      width: 1.8rem;
+    }
+
+    &__city {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Banner {
+
+    &__city {
+      font-size: 2.2rem;
+    }
+  }
+}
