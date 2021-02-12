@@ -3,42 +3,42 @@
 Que no se arruinen las actividades al aire libre por la lluvia. Con esta aplicación web podrás conocer el clima del día actual y de los próximos tres días.
 
 
-## Installation
+## Instalación
 
-1. Clone this project: `git clone <url>`.
+1. Clona el proyecto: `git clone <url>`.
 
-2. Go to the project folder: `cd gradi-web-prueba-de-desarrollo`
+2. Ve a la carpeta del proyecto: `cd gradi-web-prueba-de-desarrollo`
 
-3. Install the dependencies: `npm install`
+3. Instala las dependencias: `npm install`
 
-4. Finally, you to be able to run it: `npm run start`
+4. Finalmente, podrás correrlo en la terminal: `npm run start`
 
-## Production
+## Producción
 
-You can execute the following command:
+Puedes ejecutar el siguiente comando:
 
     npm run build
 
-## Technologies
+## Tecnologías
 
 - React
 - React Router
 - Webpack
 - Sass
 
-## Methodologies
+## Metodologías
 
-### Styles
+### Estilos
 
 - Desktop First
-- BEM (with Sass)
+- BEM (con Sass)
 
-## Preview
+## Previsualización
 
-### Home Screen
+### Página principal
 
-![Home Screen]()
+![Página principal]()
 
-## Author
+## Autor
 
 [Felipe Merchan](https://github.com/FelipeMerchan "Felipe Merchan")
