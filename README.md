@@ -7,7 +7,7 @@ Que no se arruinen las actividades al aire libre por la lluvia. Con esta aplicac
 
 1. Clone this project: `git clone <url>`.
 
-2. Go to the project folder: `cd project`
+2. Go to the project folder: `cd gradi-web-prueba-de-desarrollo`
 
 3. Install the dependencies: `npm install`
 
